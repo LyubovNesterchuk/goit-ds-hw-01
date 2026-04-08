@@ -24,6 +24,7 @@ poetry run python main.py
 📚 Dependencies
 The project uses the following external library:
 colorama
+
 All dependencies are specified in pyproject.toml and locked in poetry.lock.
 
 🧠 Features
@@ -36,21 +37,44 @@ Remove contacts or phone numbers
 Show all contacts
 Command-line interface with colored output
 
-
 📁 Project Structure
 .
 ├── main.py
 ├── ui.py
 ├── handlers.py
 ├── models.py
-├── pyproject.toml
-├── utils.py 
+├── utils.py
 ├── color_function.py
-├── formatters.py 
+├── formatters.py
+├── pyproject.toml
+├── poetry.lock
 └── README.md
+
+🐳 Running with Docker
+
+🔧 Build Docker image
+docker build -t assistant-bot .
+
+🚀 Run container (interactive mode)
+docker run -it assistant-bot
+
+The application will start automatically inside the container and display the CLI menu.
+
+🚪 Exit Instructions
+Exit the application
+Inside the bot:
+exit 
+or press:
+Ctrl + D
+
+Exit the Docker container shell
+exit
 
 ✅ Requirements Fulfilled
 Poetry is used for dependency management
 Virtual environment is created using Poetry
 Python version is explicitly specified
-All dependencies are fixed in pyproject.toml
+All dependencies are locked in pyproject.toml and poetry.lock
+Docker image builds successfully
+Application runs inside a Docker container
+CLI application is fully interactive
