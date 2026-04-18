@@ -1,4 +1,4 @@
-# Personal Assistant Bot
+# Assistant Bot
 
 ## 📌 Description
 
